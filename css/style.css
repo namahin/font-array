@@ -80,7 +80,7 @@ input[type=number] {
     background: #252525;
     color: #fff;
     font-size: 14px;
-    padding: 10px 25px;
+    padding: 7px 25px;
     border-radius: 6px;
     transition: linear .2s;
     border: 1px solid #252525;
@@ -190,7 +190,6 @@ header nav {}
 
 .menu-items ul li a {
     font-size: 15px;
-    padding: 12px 25px;
 }
 
 /* ************************************* */
@@ -272,7 +271,7 @@ header nav {}
     background: #252525;
     color: #fff;
     font-size: 14px;
-    padding: 10px 25px;
+    padding: 7px 25px;
     border-radius: 6px;
     transition: linear .2s;
     border: 1px solid #252525;
@@ -334,7 +333,9 @@ header nav {}
 /* ************************************* */
 /* font preview section start from here */
 /* ************************************* */
-.font-preview {}
+.font-preview {
+    background: #dde6e9;
+}
 
 .font-value {}
 
@@ -429,8 +430,116 @@ header nav {}
 
 .font-preview-btngroup button:last-child {
     margin-right: 0;
+    background: #fff;
+    color: #252525;
+}
+
+.font-preview-btngroup button:hover {
+    box-shadow: 0 2px 3px gray;
 }
 
 /* ************************************* */
 /* font preview section end here */
 /* ************************************* */
+
+
+/* ************************************* */
+/* font list section start from here */
+/* ************************************* */
+.font-list {}
+
+.font-header {
+    background: #252525;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.font-header p {
+    margin-bottom: 0;
+    font-size: 15px;
+    color: #ffffffbf;
+}
+
+.font-header p a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.font-header p a:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.font-header p a:hover {
+    text-decoration: underline;
+}
+
+.font-body {
+    margin-bottom: 30px;
+    display: table;
+    width: 100%;
+}
+
+.view-font {
+    overflow-x: auto;
+}
+
+.view-font a {
+    font-size: 56px;
+}
+
+
+.font-action {
+    text-align: right;
+    display: table-cell;
+    width: 150px;
+    vertical-align: middle;
+}
+
+.font-action a {
+    display: inline-block;
+    background: #252525;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 25px;
+    border-radius: 6px;
+    transition: linear .2s;
+    border: 1px solid #252525;
+}
+
+.font-action a:hover {
+    box-shadow: 0 2px 6px gray;
+}
+
+.font-action span {
+    margin-left: 5px;
+}
+
+/* ************************************* */
+/* font list section end here */
+/* ************************************* */
+
+.font-pagination {
+    border-top: 1px solid #80808030;
+}
+
+.font-pagination .pagination {
+    justify-content: flex-end;
+    margin-bottom: 0;
+}
+
+.font-pagination .page-item {
+    font-size: 15px;
+}
+
+.font-pagination .page-item.active .page-link {
+    background: #252525;
+    color: #fff;
+    border-color: #252525;
+}
+
+.font-pagination .page-item .page-link {
+    color: #252525;
+    font-size: 15px;
+}
