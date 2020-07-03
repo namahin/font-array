@@ -24,37 +24,40 @@
 <body>
     <!-- navigation bar start from here -->
     <header uk-sticky>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="" alt=""></a>
-            <!-- search box -->
-            <div class="font-search">
-                <form action="#">
-                    <label for="search"><span uk-icon="search"></span></label>
-                    <input type="search" name="" id="search" placeholder="Search favourite fonts..." required><button
-                        type="submit">Search</button>
-                </form>
-            </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
-                aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <div class="container">
 
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#"><img src="" alt=""></a>
 
+                <!-- search box -->
+                <div class="font-search">
+                    <form action="#">
+                        <label for="search"><span uk-icon="search"></span></label>
+                        <input type="search" name="" id="search" placeholder="Search favourite fonts..."
+                            required><button type="submit">Search</button>
+                    </form>
+                </div>
 
-            <div class="collapse navbar-collapse menu-items" id="mobileMenu">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Free fonts</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="brand-btn" href="#">Submit a font</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+                    aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span uk-icon="menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse menu-items" id="mobileMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Free fonts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="brand-btn" href="#">Submit a font</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <!-- navigation bar end here -->
 
@@ -288,6 +291,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="col-12 text-center">
                     <div class="social-icon">
                         <ul>
@@ -297,6 +301,12 @@
                             <li><a href="" target="_blank"><span uk-icon="facebook"></span></a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-12 text-center">
+                    <form class="subscribe">
+                        <input id="subscribe" type="email" name="mail" placeholder="Enter email address..." required>
+                        <button type="submit">Subscribe</button>
+                    </form>
                 </div>
             </div>
         </div>
