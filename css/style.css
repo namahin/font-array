@@ -711,7 +711,14 @@ footer p a {
     top: -220px;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 1px 6px #8080801a;
+    box-shadow: 0 1px 6px #8000801a;
+    transform: scale(1);
+    transition: linear .3s;
+}
+
+.sign-up-form:hover {
+    transform: scale(1.1);
+    transition: linear .3s;
 }
 
 .sign-up-form h2 {
@@ -771,10 +778,84 @@ footer p a {
 .sign-up-form form button:hover {
     box-shadow: 0 1px 6px gray;
 }
-.sign-up-form p{
+
+.sign-up-form p {
     font-size: 15px;
 }
-.sign-up-form a{
+
+.sign-up-form a {
     color: #1e87f0;
     font-size: 15px;
 }
+
+/* font-banner */
+.font-banner {
+    background-image: url(../images/11333.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    padding: 120px 0;
+}
+
+.font-banner::before {
+    content: "";
+    position: absolute;
+    filter: blur(10px);
+    background-image: linear-gradient(#08192b26, #08192bdc);
+    width: 110%;
+    height: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.font-banner h2 {
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 8px;
+    font-size: 56px;
+}
+
+.font-banner a {}
+
+/* font-details */
+.font-details {}
+
+.font-details h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.font-details table {
+    width: 100%;
+}
+
+.font-details table tbody {
+    width: 100%;
+    display: block;
+    border: 1px solid #80808045;
+}
+
+.font-details table tbody tr {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #80808045;
+}
+
+.font-details table tbody tr th {
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 250px;
+    background: #fafafa;
+    border-right: 1px solid #80808045;
+}
+
+.font-details table tbody tr td {
+    padding: 5px 15px;
+    font-size: 15px;
+}
+
+.font-details table tbody tr td a {}
