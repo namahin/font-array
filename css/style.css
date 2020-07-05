@@ -116,7 +116,10 @@ input[type=number] {
     max-width: 1200px;
 }
 
-.navbar-brand {}
+.navbar-brand {
+    width: 150px;
+    margin-right: 40px;
+}
 
 .navbar-brand img {}
 
@@ -887,7 +890,10 @@ footer p a {
     transform: translate(-50%, -50%);
 }
 
-.contributor-profile {position: relative;top: -100px;}
+.contributor-profile {
+    position: relative;
+    top: -100px;
+}
 
 .contributor-photo {
     height: 150px;
@@ -901,13 +907,27 @@ footer p a {
     border-radius: 100px;
     margin: auto;
     margin-bottom: 25px;
+    background-color: #252525;
 }
 
-.contributor-profile h2 {font-size: 22px;font-weight: 500;margin: 0;line-height: 1;margin-bottom: 8px;}
+.contributor-profile h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1;
+    margin-bottom: 8px;
+}
 
-.contributor-profile p {margin: 0;font-size: 14px;color: gray;}
+.contributor-profile p {
+    margin: 0;
+    font-size: 14px;
+    color: gray;
+}
 
-.contributor-profile p span {font-size: 14px;color: #616161;}
+.contributor-profile p span {
+    font-size: 14px;
+    color: #616161;
+}
 
 .contributor-profile p b {
     font-weight: 200;
