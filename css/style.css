@@ -858,4 +858,61 @@ footer p a {
     font-size: 15px;
 }
 
-.font-details table tbody tr td a {}
+.font-details table tbody tr td a {
+    text-decoration: underline;
+}
+
+/* *********************************************** */
+/* contributor section css start from here */
+/* *********************************************** */
+.contributor-cover {
+    background-image: url(../images/11333.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+}
+
+.contributor-cover::before {
+    content: "";
+    position: absolute;
+    filter: blur(10px);
+    background-image: linear-gradient(#08192b26, #08192bdc);
+    width: 110%;
+    height: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contributor-profile {position: relative;top: -100px;}
+
+.contributor-photo {
+    height: 150px;
+    width: 150px;
+    background-image: url(../images/contributor\ pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 6px solid #eee;
+    box-shadow: 0 2px 3px #80808066;
+    border-radius: 100px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.contributor-profile h2 {font-size: 22px;font-weight: 500;margin: 0;line-height: 1;margin-bottom: 8px;}
+
+.contributor-profile p {margin: 0;font-size: 14px;color: gray;}
+
+.contributor-profile p span {font-size: 14px;color: #616161;}
+
+.contributor-profile p b {
+    font-weight: 200;
+}
+
+/* *********************************************** */
+/* contributor end */
+/* *********************************************** */
