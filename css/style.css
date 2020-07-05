@@ -666,3 +666,115 @@ footer p a {
     border: 1px solid #252525;
     border-radius: 6px;
 }
+
+.page-cover-sec {
+    background-image: url(../images/free-font-cover.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-cover-sec:before {
+    content: "";
+    position: absolute;
+    filter: blur(10px);
+    background-image: linear-gradient(#08192b26, #08192bdc);
+    width: 120%;
+    height: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page-cover-sec h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 56px;
+}
+
+/* ********************************** */
+/* sign up form */
+/* ********************************** */
+.sign-up-form {
+    background-image: url(../images/sign-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    padding: 50px 45px;
+    position: relative;
+    top: -220px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px #8080801a;
+}
+
+.sign-up-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.sign-up-form form {}
+
+.sign-up-form form .checkbox {
+    display: table;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.sign-up-form form .checkbox input {
+    width: 20px;
+    display: table-cell;
+    height: 20px;
+    padding: 0;
+}
+
+.sign-up-form form .checkbox p {
+    margin: 0;
+    padding-left: 15px;
+}
+
+.sign-up-form form label {
+    width: 100%;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.sign-up-form form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px 15px;
+    border: 1px solid #2525253d;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.sign-up-form form button {
+    display: inline-block;
+    background: #252525;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 25px;
+    border-radius: 6px;
+    transition: linear .2s;
+    border: 1px solid #252525;
+}
+
+.sign-up-form form button:hover {
+    box-shadow: 0 1px 6px gray;
+}
+.sign-up-form p{
+    font-size: 15px;
+}
+.sign-up-form a{
+    color: #1e87f0;
+    font-size: 15px;
+}
