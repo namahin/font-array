@@ -73,11 +73,96 @@
     <div class="contributor-cover"></div>
 
     <!-- dashboard section start from here -->
-    <section class="dashboard">
-        <div class="container">
+    <section class="dashboard py-5">
+        <div class="container py-5">
             <div class="row">
                 <div class="col-12">
+                    <div class="uk-overflow-auto nam-class-table mb-4">
+                        <table class="uk-table uk-table-striped uk-table-hover uk-table-small">
+                            <thead class="">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Font Name</th>
+                                    <th>
+                                        <div uk-form-custom="target: > * > span:last-child">
+                                            <select>
+                                                <option value="">All Categories</option>
+                                                <option value="psd">Fancy</option>
 
+                                            </select>
+                                            <span class="uk-text">
+                                                <span style="float: right;" uk-icon="icon: triangle-down"></span>
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </th>
+                                    <th>Downloads <button class="uk-link" uk-icon="arrow-down"></button></th>
+                                    <th class="text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="font-details.html" target="_blank">Font name here</a></td>
+                                    <td><a href="#">Fancy</a></td>
+                                    <td>50080</td>
+                                    <td class="text-right">
+                                        <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+                                        <a href="#" class="uk-icon-link" uk-icon="file-edit" type="button"
+                                            uk-toggle="target: #editProfile"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="font-details.html" target="_blank">Font name here</a></td>
+                                    <td><a href="#">Fancy</a></td>
+                                    <td>50080</td>
+                                    <td class="text-right">
+                                        <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+                                        <a href="#" class="uk-icon-link" uk-icon="file-edit" type="button"
+                                            uk-toggle="target: #editProfile"></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><a href="font-details.html" target="_blank">Font name here</a></td>
+                                    <td><a href="#">Fancy</a></td>
+                                    <td>50080</td>
+                                    <td class="text-right">
+                                        <a href="#" class="uk-icon-link" uk-icon="trash"></a>
+                                        <a href="#" class="uk-icon-link" uk-icon="file-edit" type="button"
+                                            uk-toggle="target: #editProfile"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- pagination start -->
+                    <div class="font-pagination pt-5 border-none">
+                        <div class="container">
+                            <nav aria-label="">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1
+                                            <span class="sr-only">(current)</span></a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2 </a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- pagination end -->
                 </div>
             </div>
         </div>
@@ -128,6 +213,57 @@
         </div>
     </footer>
     <!-- footer section end here -->
+
+
+    <!-- This is the modal for update font and it's styles -->
+    <div id="editProfile" class="editProfile" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">Update this font and it's style</h2>
+            <form class="uk-form-stacked">
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="fontName">Font Family Name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="fontName" name="fontName" type="text" placeholder="Enter font name">
+                    </div>
+                </div>
+                <div class="font-style mb-5">
+                    <div class="mb-4">
+                        <label class="uk-form-label" for="fontStyleName">Font style name</label>
+                        <input class="uk-input" id="fontStyleName" type="text" placeholder="Enter style name">
+                        <div class="mt-3">
+                            <label class="uk-form-label" for="fontFile">Insert font file</label>
+                            <div uk-form-custom="target: true">
+                                <input type="file" id="fontFile">
+                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file"
+                                    disabled>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Add</button>
+                            <button class="btn btn-danger" type="button">X</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="uk-form-label" for="fontStyleName">Font style name</label>
+                        <input class="uk-input" id="fontStyleName" type="text" placeholder="Enter style name">
+                        <div class="mt-3">
+                            <label class="uk-form-label" for="fontFile">Insert font file</label>
+                            <div uk-form-custom="target: true">
+                                <input type="file" id="fontFile">
+                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file"
+                                    disabled>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Add</button>
+                            <button class="btn btn-danger" type="button">X</button>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="reset" class="btn btn-dark">Reset</button>
+                <button type="submit" class="btn btn-success">Update Font</button>
+            </form>
+        </div>
+    </div>
+
 
 
 
