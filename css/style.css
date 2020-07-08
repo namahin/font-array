@@ -357,7 +357,13 @@ header nav {
 
 .font-value {}
 
-.font-value form {}
+.font-value.uk-active {
+    background: #dde6e9;
+    text-align: center;
+
+    box-shadow: 0 3px 6px #80808021;
+    border-radius: 0 0 15px 15px;
+}
 
 .font-value form {}
 
