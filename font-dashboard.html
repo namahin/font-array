@@ -2,28 +2,24 @@
 <html lang="en">
 
 <head>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Font Array</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <!-- Google Fonts: Poppins -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-            rel="stylesheet">
-        <!-- Bootstrap v4.5.0 -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- UIkit 3.5.4 -->
-        <link rel="stylesheet" href="css/uikit.min.css">
-        <!-- plugins css -->
-        <link rel="stylesheet" href="css/listnav.css">
-        <!-- theme css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/media.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Array</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts: Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap v4.5.0 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- UIkit 3.5.4 -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <!-- plugins css -->
+    <link rel="stylesheet" href="css/listnav.css">
+    <!-- theme css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
 
 <body>
     <!-- navigation bar start from here -->
@@ -31,13 +27,13 @@
         <div class="container">
 
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#"><img src="" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
 
                 <!-- search box -->
                 <div class="font-search">
                     <form action="#">
                         <label for="search"><span uk-icon="search"></span></label>
-                        <input type="search" name="" id="search" placeholder="Search favourite fonts..."
+                        <input type="search" name="search" id="search" placeholder="Search favourite fonts..."
                             required><button type="submit">Search</button>
                     </form>
                 </div>
@@ -50,44 +46,44 @@
                 <div class="collapse navbar-collapse menu-items" id="mobileMenu">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Free fonts</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="brand-btn" href="#">Submit a font</a>
+                            <a class="nav-link" href="free-fonts.html">Free fonts</a>
                         </li>
                     </ul>
+                </div>
+                <div class="contributor-action">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="contributor-profile-admin.html"><span uk-icon="user"></span>Profile</a></li>
+                            <li><a href="font-submit.html"><span uk-icon="bolt"></span>Submit a font</a></li>
+                            <li><a href="font-dashboard.html"><span uk-icon="list"></span>Font dashboard</a></li>
+                            <li><a href="sign-in.html"><span uk-icon="sign-out"></span>Log out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
     <!-- navigation bar end here -->
 
-    <!-- page cover start from here -->
-    <section class="page-cover-sec"></section>
-    <!-- page cover end here -->
+    <!-- contributor cover -->
+    <div class="contributor-cover"></div>
 
-    <!-- sign up form -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <div class="sign-up-form mx-5">
-                    <h2>Sign in at FONT array</h2>
-                    <form action="contributor-profile-admin.html">
-                        <label for="user">User</label>
-                        <input id="user" type="text" placeholder="Enter user name or email" required>
-                        <label for="pass">Password</label>
-                        <input id="pass" type="password" placeholder="Enter password" required>
-                        <button type="submit">Sign in</button>
-                    </form>
-                    <p><a href="sign-up.html">Create a new account</a></p>
+    <!-- dashboard section start from here -->
+    <section class="dashboard">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
                 </div>
             </div>
         </div>
-    </div>
-    <!-- sign up form end -->
+    </section>
+    <!-- dashboard section end here -->
+
 
     <!-- footer section start from here -->
     <section class="footer-sec">
@@ -96,7 +92,7 @@
                 <div class="col-12 text-center">
                     <div class="footer-nav">
                         <ul>
-                            <li><a href="#">Submit a font</a></li>
+                            <li><a href="sign-up.html">Submit a font</a></li>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Privacy</a></li>
                             <li><a href="#">Forums</a></li>
@@ -127,11 +123,12 @@
     <footer>
         <div class="container">
             <div class="text-center">
-                <p>© 2020<a href="#">Font Array</a>. All Right Reserved</p>
+                <p>© 2020<a href="index.html">Font Array</a>. All Right Reserved</p>
             </div>
         </div>
     </footer>
     <!-- footer section end here -->
+
 
 
 
@@ -143,3 +140,5 @@
     <script src="js/jquery-listnav.js"></script>
     <script src="js/main.js"></script>
 </body>
+
+</html>

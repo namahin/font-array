@@ -876,6 +876,7 @@ footer p a {
     overflow: hidden;
     position: relative;
     height: 200px;
+    background-attachment: fixed;
 }
 
 .contributor-cover::before {
@@ -908,6 +909,30 @@ footer p a {
     margin: auto;
     margin-bottom: 25px;
     background-color: #252525;
+    position: relative
+}
+
+.contributor-photo button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    color: gray;
+    font-size: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 0px 3px #80808066;
+    padding: 2px 8px;
+    border-radius: 15px;
+    transition: linear .2s;
+    transform: scale(1)
+}
+
+.contributor-photo button:hover {
+    background: gray;
+    color: #fff;
+    transition: linear .2s;
+    transform: scale(1.1);
+    border-color: gray;
 }
 
 .contributor-profile h2 {
@@ -933,6 +958,140 @@ footer p a {
     font-weight: 200;
 }
 
+.contributor-action {}
+
+.contributor-action button {
+    background-image: url(../images/contributor\ pic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    margin-left: 30px;
+    box-shadow: 0 2px 3px #80808066;
+}
+
+.contributor-action .dropdown-menu {
+    right: 0;
+    left: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 6px #80808036;
+    border-bottom: 3px solid gray;
+    padding-top: 0;
+}
+
+.contributor-action ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.contributor-action ul li {
+    border-bottom: 1px dotted #80808066;
+}
+
+.contributor-action ul li a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 15px;
+    color: #252525;
+}
+
+.contributor-action ul li a:hover {
+    background: #fafafa;
+}
+
+.contributor-action ul li a span {
+    margin-right: 15px;
+}
+
+.profile-preview {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 6px solid #eee;
+    box-shadow: 0 2px 3px #80808066;
+    border-radius: 120px;
+    margin-bottom: 25px;
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-preview label:before {
+    content: 'UPLOAD';
+    display: block;
+    position: absolute;
+    bottom: 8px;
+    cursor: pointer;
+    background: #fff;
+    color: gray;
+    font-size: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 0px 3px #80808066;
+    padding: 2px 8px;
+    border-radius: 15px;
+    transition: linear .2s;
+    transform: translate(-50%, 0) scale(1);
+    left: 50%;
+    z-index: 1;
+}
+
+.profile-preview:hover label:before {
+    transform: translate(-50%, 0) scale(1.05);
+    color: #fff;
+    background: gray;
+    border-color: gray;
+
+}
+
+.profile-preview label {
+    width: 100%;
+}
+
+.profile-preview img {
+    width: 100%;
+    transition: linear .3s;
+}
+
+.profile-preview input {
+    display: none;
+}
+
+.editProfile {}
+
+.editProfile h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.editProfile input {
+    border-radius: 6px;
+}
+
+.editProfile label {
+    padding-left: 8px
+}
+
 /* *********************************************** */
 /* contributor end */
 /* *********************************************** */
+
+/* add new font */
+.font-addition {}
+
+.font-addition h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.font-addition label {
+    margin-left: 8px;
+}
+
+.font-addition input {
+    border-radius: 6px;
+    font-size: 15px;
+}
