@@ -86,61 +86,31 @@
                                     placeholder="Enter font name">
                             </div>
                         </div>
-                        <div class="font-style mb-4">
-                            <div class="uk-grid-small" uk-grid>
+                        <div class="font-style">
+                            <div class="uk-grid-small repeatField" uk-grid uk-alert>
+                                <a class="uk-alert-close" uk-close></a>
                                 <div class="uk-width-1-2@s">
-                                    <label class="uk-form-label" for="fontStyleName">Font style name</label>
-                                    <input class="uk-input" id="fontStyleName" type="text"
-                                        placeholder="Enter style name">
+                                    <label class="uk-form-label" for="">Font style name</label>
+                                    <input class="uk-input" id="" type="text" placeholder="Enter style name">
                                 </div>
                                 <div class="uk-width-1-2@s">
                                     <label class="uk-form-label" for="fontFile">Insert font file</label>
-                                    <div uk-form-custom="target: true">
+                                    <div class="uk-width-1-1" uk-form-custom="target: true">
                                         <input type="file" id="fontFile">
-                                        <input class="uk-input uk-form-width-medium" type="text"
-                                            placeholder="Select file" disabled>
+                                        <input class="uk-input" type="text" placeholder="Select file" disabled>
                                     </div>
-                                    <button class="btn btn-primary" type="submit">Add</button>
-                                    <button class="btn btn-danger" type="button">X</button>
                                 </div>
                             </div>
-                            <div class="uk-grid-small" uk-grid>
-                                <div class="uk-width-1-2@s">
-                                    <label class="uk-form-label" for="fontStyleName">Font style name</label>
-                                    <input class="uk-input" id="fontStyleName" type="text"
-                                        placeholder="Enter style name">
-                                </div>
-                                <div class="uk-width-1-2@s">
-                                    <label class="uk-form-label" for="fontFile">Insert font file</label>
-                                    <div uk-form-custom="target: true">
-                                        <input type="file" id="fontFile">
-                                        <input class="uk-input uk-form-width-medium" type="text"
-                                            placeholder="Select file" disabled>
-                                    </div>
-                                    <button class="btn btn-primary" type="submit">Add</button>
-                                    <button class="btn btn-danger" type="button">X</button>
-                                </div>
-                            </div>
-                            <div class="uk-grid-small" uk-grid>
-                                <div class="uk-width-1-2@s">
-                                    <label class="uk-form-label" for="fontStyleName">Font style name</label>
-                                    <input class="uk-input" id="fontStyleName" type="text"
-                                        placeholder="Enter style name">
-                                </div>
-                                <div class="uk-width-1-2@s">
-                                    <label class="uk-form-label" for="fontFile">Insert font file</label>
-                                    <div uk-form-custom="target: true">
-                                        <input type="file" id="fontFile">
-                                        <input class="uk-input uk-form-width-medium" type="text"
-                                            placeholder="Select file" disabled>
-                                    </div>
-                                    <button class="btn btn-primary" type="submit">Add</button>
-                                    <button class="btn btn-danger" type="button">X</button>
-                                </div>
-                            </div>
+
+
+                            <!-- add button -->
+                            <button type="button" role="button" class="btn btn-info btn-sm repeat">Add new one</button>
                         </div>
-                        <button type="submit" class="btn btn-success">Submit Font</button>
-                        <button type="submit" class="btn btn-dark">Submit and Add New</button>
+
+                        <div class="text-right">
+                            <button type="button" class="btn btn-dark">Submit and Add New</button>
+                            <button type="submit" class="btn btn-success">Submit Font Family </button>
+                        </div>
                     </form>
                 </div>
             </div>

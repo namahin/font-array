@@ -34,3 +34,12 @@ function previewImage(event) {
 	}
 	reader.readAsDataURL(event.target.files[0]);
 }
+
+// add new field at font submit 
+$(function () {
+	$(".repeat").on('click', function (e) {
+		e.preventDefault();
+		var $self = $(this);
+		$self.before($self.prev('.repeatField').clone());
+	});
+});
