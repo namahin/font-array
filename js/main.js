@@ -2,12 +2,12 @@
 $(function () {
 	$('#fontFilter').listnav({
 		initHidden: false,
-		noMatchText: 'No font for this Alphabet'
+		noMatchText: 'No font for this Alphabet',
 	});
-	$('.filter a').click(function (e) {
-		e.preventDefault();
+	// $('.filter a').click(function (e) {
+	// 	e.preventDefault();
 
-	});
+	// });
 });
 
 
@@ -22,6 +22,7 @@ $('.italic').click(function () {
 		$this.addClass('italic')
 	}
 })
+
 
 // profile image prview js
 function previewImage(event) {

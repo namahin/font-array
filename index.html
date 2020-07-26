@@ -23,11 +23,11 @@
 
 <body>
     <!-- navigation bar start from here -->
-    <header uk-sticky>
+    <header class="mega-menu" uk-sticky>
         <div class="container">
 
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt=""></a>
 
                 <!-- search box -->
                 <div class="font-search">
@@ -59,6 +59,38 @@
             </nav>
         </div>
     </header>
+    <div class="mobile-menu">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <button class="menu-toggle" type="button" uk-toggle="target: #offcanvas-menu"><span
+                    uk-icon="menu"></span></button>
+            <form action="#">
+                <input type="search" name="search" id="search" placeholder="Search favourite fonts..." required><button
+                    class="search-btnico" type="submit"><span uk-icon="search"></span></button>
+            </form>
+        </nav>
+        <div id="offcanvas-menu" uk-offcanvas="menu: true">
+            <div class="uk-offcanvas-bar offcanvas-menu">
+
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="free-fonts.html">Free fonts</a>
+                    </li>
+                    <li>
+                        <a href="sign-up.html">Submit a font</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
     <!-- navigation bar end here -->
 
     <!-- latest font section start from here -->
@@ -181,7 +213,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-6">
-                        <p><a href="font-details.html">fontname</a>by<a href="contributor-profile.html">Font Author Name</a></p>
+                        <p><a href="font-details.html">fontname</a>by<a href="contributor-profile.html">Font Author
+                                Name</a></p>
                     </div>
                     <div class="col-md-6 col-sm-6 text-md-right text-sm-right text-left">
                         <p>Free for Personal Use</p>
@@ -192,7 +225,7 @@
         <div class="container">
             <div class="font-body">
                 <div class="view-font">
-                    <a href="font-details.html">Font Text</a>
+                    <a style="font-family: Poppins;" href="font-details.html">Font Text</a>
                 </div>
                 <div class="font-action">
                     <a href="#" download="">Download<span uk-icon="icon: download"></span></a>

@@ -121,8 +121,6 @@ input[type=number] {
     margin-right: 40px;
 }
 
-.navbar-brand img {}
-
 .navbar-toggler {
     border: 1px solid #252525;
     border-radius: 6px;
@@ -146,8 +144,6 @@ header {
 header nav {
     padding: 12px 0px !important;
 }
-
-.font-search {}
 
 .font-search form {
     overflow: hidden;
@@ -191,12 +187,6 @@ header nav {
     background: #252525;
     color: #fff;
 }
-
-.font-search form button span {}
-
-.menu-items {}
-
-.menu-items ul {}
 
 .menu-items ul li {
     padding: 0 10px;
@@ -318,8 +308,6 @@ header nav {
     font-weight: 500;
 }
 
-#fontFilter {}
-
 .filter {
     margin-bottom: 0px;
     padding: 0;
@@ -355,8 +343,6 @@ header nav {
     background: #dde6e9;
 }
 
-.font-value {}
-
 .font-value.uk-active {
     background: #dde6e9;
     text-align: center;
@@ -364,8 +350,6 @@ header nav {
     box-shadow: 0 3px 6px #80808021;
     border-radius: 0 0 15px 15px;
 }
-
-.font-value form {}
 
 .font-value-item {
     display: inline-block;
@@ -392,8 +376,6 @@ header nav {
     color: #252525;
 }
 
-.font-value-item button {}
-
 #Preview {
     width: 320px;
 }
@@ -405,8 +387,6 @@ header nav {
     font-size: 15px;
     color: #252525;
 }
-
-#font-weight option {}
 
 #ColorHex {
     width: 130px;
@@ -438,8 +418,6 @@ header nav {
     background: #252525;
 }
 
-.font-preview-btngroup {}
-
 .font-preview-btngroup button {
     display: inline-block;
     background: #252525;
@@ -470,8 +448,6 @@ header nav {
 /* ************************************* */
 /* font list section start from here */
 /* ************************************* */
-.font-list {}
-
 .font-header {
     background: #252525;
     padding: 10px 0;
@@ -574,8 +550,6 @@ header nav {
     background: #151F29;
 }
 
-.footer-nav {}
-
 .footer-nav ul {
     padding: 0;
     list-style: none;
@@ -594,8 +568,6 @@ header nav {
 .footer-nav ul li a:hover {
     color: #fff;
 }
-
-.social-icon {}
 
 .social-icon ul {
     padding: 0;
@@ -721,13 +693,6 @@ footer p a {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 1px 6px #8000801a;
-    transform: scale(1);
-    transition: linear .3s;
-}
-
-.sign-up-form:hover {
-    transform: scale(1.1);
-    transition: linear .3s;
 }
 
 .sign-up-form h2 {
@@ -735,8 +700,6 @@ footer p a {
     margin-bottom: 30px;
     font-size: 24px;
 }
-
-.sign-up-form form {}
 
 .sign-up-form form .checkbox {
     display: table;
@@ -827,11 +790,7 @@ footer p a {
     font-size: 56px;
 }
 
-.font-banner a {}
-
 /* font-details */
-.font-details {}
-
 .font-details h2 {
     font-size: 26px;
     font-weight: 500;
@@ -964,8 +923,6 @@ footer p a {
     font-weight: 200;
 }
 
-.contributor-action {}
-
 .contributor-action button {
     background-image: url(../images/contributor\ pic.png);
     background-repeat: no-repeat;
@@ -1066,8 +1023,6 @@ footer p a {
     display: none;
 }
 
-.editProfile {}
-
 .editProfile h2 {
     font-size: 26px;
     font-weight: 500;
@@ -1086,8 +1041,6 @@ footer p a {
 /* *********************************************** */
 
 /* add new font */
-.font-addition {}
-
 .font-addition h2 {
     font-size: 26px;
     font-weight: 500;
