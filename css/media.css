@@ -111,6 +111,29 @@
         color: #fff;
     }
 
+    .offcanvas-menu {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .offcanvas-menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .offcanvas-menu ul li a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 15px;
+        line-height: 18px;
+        border-bottom: 1px solid #252525;
+    }
+
+    .offcanvas-menu ul li a:hover {
+        background: gray;
+    }
+
     .filter {
         column-count: 4;
     }

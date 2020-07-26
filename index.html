@@ -56,12 +56,23 @@
                         </li>
                     </ul>
                 </div>
+                <div class="contributor-action">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="contributor-profile-admin.html"><span uk-icon="user"></span>Profile</a></li>
+                            <li><a href="font-submit.html"><span uk-icon="bolt"></span>Submit a font</a></li>
+                            <li><a href="font-dashboard.html"><span uk-icon="list"></span>Font dashboard</a></li>
+                            <li><a href="sign-in.html"><span uk-icon="sign-out"></span>Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
     <div class="mobile-menu">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <a href="/"><img src="images/logo.png" alt=""></a>
         </div>
         <nav>
             <button class="menu-toggle" type="button" uk-toggle="target: #offcanvas-menu"><span
@@ -71,23 +82,18 @@
                     class="search-btnico" type="submit"><span uk-icon="search"></span></button>
             </form>
         </nav>
-        <div id="offcanvas-menu" uk-offcanvas="menu: true">
+        <div id="offcanvas-menu"  uk-offcanvas="overlay: true">
             <div class="uk-offcanvas-bar offcanvas-menu">
-
                 <button class="uk-offcanvas-close" type="button" uk-close></button>
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="free-fonts.html">Free fonts</a>
-                    </li>
-                    <li>
-                        <a href="sign-up.html">Submit a font</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="free-fonts.html">Free fonts</a></li>
+                    <li><a href="sign-up.html">Submit a font</a></li>
+                    <li><a href="contributor-profile-admin.html">Profile</a></li>
+                    <li><a href="font-submit.html">Submit a font</a></li>
+                    <li><a href="font-dashboard.html">Font dashboard</a></li>
+                    <li><a href="sign-in.html">Log out</a></li>
                 </ul>
-
-
             </div>
         </div>
     </div>
