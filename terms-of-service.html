@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of service | Font Array</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts: Poppins -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap v4.5.0 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- UIkit 3.5.4 -->
+    <link rel="stylesheet" href="css/uikit.min.css">
+    <!-- plugins css -->
+    <link rel="stylesheet" href="css/listnav.css">
+    <!-- theme css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+    <!-- navigation bar start from here -->
+    <header uk-sticky>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.svg" alt=""></a>
+
+                <!-- search box -->
+                <div class="font-search">
+                    <form action="#">
+                        <label for="search"><span uk-icon="search"></span></label>
+                        <input type="search" name="search" id="search" placeholder="Search favourite fonts..."
+                            required><button type="submit">Search</button>
+                    </form>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu"
+                    aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span uk-icon="menu"></span>
+                </button>
+
+                <div class="collapse navbar-collapse menu-items" id="mobileMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="free-fonts.html">Free fonts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contributor-action">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="contributor-profile-admin.html"><span uk-icon="user"></span>Profile</a></li>
+                            <li><a href="font-submit.html"><span uk-icon="bolt"></span>Submit a font</a></li>
+                            <li><a href="font-dashboard.html"><span uk-icon="list"></span>Font dashboard</a></li>
+                            <li><a href="sign-in.html"><span uk-icon="sign-out"></span>Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- navigation bar end here -->
+
+    <!-- contributor cover -->
+    <div class="contributor-cover">
+        <h2>Terms of service</h2>
+    </div>
+
+    <section class="page-content py-5">
+        <div class="container py-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed tempora quam id quasi, ipsa
+                sapiente nihil voluptates at voluptate debitis maiores ipsam culpa porro rem quis illum iste. Corporis!
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed tempora quam id quasi, ipsa
+                sapiente nihil voluptates at voluptate desitis maiores ipsam culpa porro rem quis illum iste. Corporis!
+            </p>
+        </div>
+    </section>
+
+
+    <!-- footer section start from here -->
+    <section class="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="sign-up.html">Submit a font</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Forums</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="" target="_blank"><span uk-icon="pinterest"></span></a></li>
+                            <li><a href="" target="_blank"><span uk-icon="instagram"></span></a></li>
+                            <li><a href="" target="_blank"><span uk-icon="twitter"></span></a></li>
+                            <li><a href="" target="_blank"><span uk-icon="facebook"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <form class="subscribe">
+                        <input id="subscribe" type="email" name="mail" placeholder="Enter email address..." required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="text-center">
+                <p>© 2020<a href="index.html">Font Array</a>. All Right Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section end here -->
+
+
+    <!-- This is the modal for update font and it's styles -->
+    <div id="editProfile" class="editProfile" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">Update this font and it's style</h2>
+            <form class="uk-form-stacked">
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="fontName">Font Family Name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="fontName" name="fontName" type="text" placeholder="Enter font name">
+                    </div>
+                </div>
+                <div class="font-style mb-5">
+                    <div class="mb-4">
+                        <label class="uk-form-label" for="fontStyleName">Font style name</label>
+                        <input class="uk-input" id="fontStyleName" type="text" placeholder="Enter style name">
+                        <div class="mt-3">
+                            <label class="uk-form-label" for="fontFile">Insert font file</label>
+                            <div uk-form-custom="target: true">
+                                <input type="file" id="fontFile">
+                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file"
+                                    disabled>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Add</button>
+                            <button class="btn btn-danger" type="button">X</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="uk-form-label" for="fontStyleName">Font style name</label>
+                        <input class="uk-input" id="fontStyleName" type="text" placeholder="Enter style name">
+                        <div class="mt-3">
+                            <label class="uk-form-label" for="fontFile">Insert font file</label>
+                            <div uk-form-custom="target: true">
+                                <input type="file" id="fontFile">
+                                <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file"
+                                    disabled>
+                            </div>
+                            <button class="btn btn-primary" type="submit">Add</button>
+                            <button class="btn btn-danger" type="button">X</button>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="reset" class="btn btn-dark">Reset</button>
+                <button type="submit" class="btn btn-success">Update Font</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- js -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-listnav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
