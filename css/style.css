@@ -786,8 +786,25 @@ footer p a {
 .font-banner h2 {
     color: #fff;
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 13px;
     font-size: 56px;
+}
+
+.font-banner a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 7px 20px;
+    border-radius: 6px;
+    transition: linear .2s;
+    border: 1px solid #252525;
+    background: #fff;
+    color: #252525;
+}
+
+.font-banner a:hover {
+    box-shadow: 0 0 3px gray;
+    background: #252525;
+    color: #fff;
 }
 
 /* font-details */
@@ -1096,10 +1113,12 @@ footer p a {
 }
 
 /* contact-form */
-.page-content{}
-.page-content article{
+.page-content {}
+
+.page-content article {
     margin-bottom: 20px;
 }
+
 .contact-form {
     max-width: 620px;
     margin: 0 auto;
@@ -1129,6 +1148,25 @@ footer p a {
     border-radius: 6px;
 }
 
-.contact-form button {}
+/* filter-element css */
+.filter-element {
+    margin-bottom: 25px;
+}
 
-.contact-form button:hover {}
+.filter-element select {
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 0;
+    transition: linear .2s;
+    padding-right: 25px;
+}
+.filter-element select:focus{
+    box-shadow: 0 0 0 .2rem #e3e3e380;
+    background: #252525;
+    color: #fff;
+}
+.filter-element select:hover{
+    background: #252525;
+    color: #fff;
+    transition: linear .2s;
+}
