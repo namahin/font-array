@@ -789,7 +789,12 @@ footer p a {
     margin-bottom: 13px;
     font-size: 56px;
 }
-
+.font-banner p{
+    color: #ffffffc9;
+}
+.font-banner p span{
+    color: #ffffffc9;
+}
 .font-banner a {
     display: inline-block;
     font-size: 14px;
