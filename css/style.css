@@ -789,12 +789,15 @@ footer p a {
     margin-bottom: 13px;
     font-size: 56px;
 }
-.font-banner p{
+
+.font-banner p {
     color: #ffffffc9;
 }
-.font-banner p span{
+
+.font-banner p span {
     color: #ffffffc9;
 }
+
 .font-banner a {
     display: inline-block;
     font-size: 14px;
@@ -1165,13 +1168,27 @@ footer p a {
     transition: linear .2s;
     padding-right: 25px;
 }
-.filter-element select:focus{
+
+.filter-element select:focus {
     box-shadow: 0 0 0 .2rem #e3e3e380;
     background: #252525;
     color: #fff;
 }
-.filter-element select:hover{
+
+.filter-element select:hover {
     background: #252525;
     color: #fff;
     transition: linear .2s;
+}
+
+.error {
+    margin: 0;
+    font-weight: 300;
+    font-size: 12px !important;
+    position: relative;
+    height: 0px;
+    top: -20px;
+    right: 5px;
+    text-align: right;
+    color: red;
 }
