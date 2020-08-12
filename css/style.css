@@ -702,22 +702,26 @@ footer p a {
 }
 
 .sign-up-form form .checkbox {
-    display: table;
-    width: 100%;
     margin-bottom: 20px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .sign-up-form form .checkbox input {
-    width: 20px;
-    display: table-cell;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     padding: 0;
+    margin: 0;
+    float: left;
+    position: relative;
+    top: 4px;
+    border-radius: 0;
+    border-color: #1e87f0;
 }
 
 .sign-up-form form .checkbox p {
     margin: 0;
-    padding-left: 15px;
+    padding-left: 25px;
 }
 
 .sign-up-form form label {
