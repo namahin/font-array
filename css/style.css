@@ -1192,3 +1192,7 @@ footer p a {
     text-align: right;
     color: red;
 }
+.alert-danger{
+    font-weight: 400;
+    font-size: 15px;
+}
